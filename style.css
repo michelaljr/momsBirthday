@@ -1,0 +1,97 @@
+body {
+    background-color: pink;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    padding: 20px;
+}
+
+#title {
+    font-size: 3em;
+}
+
+#title span {
+    transition: all 0.3s;
+}
+
+#title .first-letter {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.image-container {
+    margin: 10px;
+    position: relative;
+}
+
+.gallery-image {
+    width: 12.5vw;
+    height: 50vh;
+    object-fit:cover;
+    cursor: pointer;
+}
+
+.message {
+    display: none;
+    font-size: 1.5em;
+    color: black;
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    margin-top: 10px;
+    transform: translateX(-50%);
+    background: rgba(255, 255, 255, 0.8);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#title .letter1 { color: red; font-family: 'Verdana', Geneva, sans-serif; }
+#title .letter2 { color: orange; font-family: 'Georgia', serif; }
+#title .letter3 { color: yellow; font-family: 'Impact', Charcoal, sans-serif; }
+#title .letter4 { color: green; font-family: 'Tahoma', Geneva, sans-serif; }
+#title .letter5 { color: blue; font-family: 'Verdana', Geneva, sans-serif; }
+#title .letter6 { color: purple; font-family: 'Lucida Console', Monaco, monospace; }
+#title .letter7 { color: rgb(108, 167, 102); font-family: 'Comic Sans MS', cursive, sans-serif; }
+#title .letter8 { color: teal; font-family: 'Times New Roman', Times, serif; }
+#title .letter9 { color: navy; font-family: 'Arial Black', Gadget, sans-serif; }
+#title .letter10 { color: maroon; font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif; }
+#title .letter11 { color: lime; font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif; }
+#title .letter12 { color: olive; font-family: 'Trebuchet MS', Helvetica, sans-serif; }
+#title .letter13 { color: aqua; font-family: 'Courier New', Courier, monospace; }
+#title .letter14 { color: fuchsia; font-family: 'Impact', Charcoal, sans-serif; }
+#title .letter15 { color: brown; font-family: 'Comic Sans MS', cursive, sans-serif; }
+#title .letter16 { color: rgb(177, 0, 0); font-family: 'Georgia', serif; }
+#title .letter17 { color: rgb(0, 190, 159); font-family: 'Tahoma', Geneva, sans-serif; }
+#title .letter18 { color: rgb(233, 150, 55); font-family: 'Verdana', Geneva, sans-serif; }
+
+/* Media query for small screens like iPhones */
+@media (max-width: 600px) {
+    .gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-container {
+        margin: 20px 0;
+    }
+
+    .gallery-image {
+        width: 90vw; /* Make the image take 90% of the viewport width */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .message {
+        position: static; /* Reset positioning */
+        width: auto;
+        transform: none;
+        margin-top: 10px;
+    }
+}
